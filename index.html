@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather app</title>
+        <!-- importing ILUS3-->     
+        <link href="https://raw.githack.com/atoms19/ILUS.CSS/main/ILUS3.min.css" rel="stylesheet"></link>
+        <!-- importing sweet alert -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!-- importing material icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- importing jquery -->
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <!-- importing Cairo font family -->
+        <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body onload="alert()">
+    
+     <div id="code">
+       <div id=maincard class="hide anime-fade anime-fastest">
+       <div id="card" class="card" >
+           <div id="menu_option"><i class="material-icons" onclick="ask()">edit_location</i></div>
+           
+           
+           
+           <div id="help"><i class="material-icons"></i></div>
+           <div class="heading"></div>
+           <div class="place"> <div id="place"></div></div>
+           <br />
+           <div class="date"> <div id="date"></div></div>
+           <br />
+           <br />
+           <br />
+           <div class="temperature"><div id="temperature"></div></div>
+           <div id="climat"><div class="climate"> <div id="climate"> </div></div></div>
+           <div class="line"></div>
+       </div> 
+       </div>
+       
+       
+       
+       
+       <div class="popup card anime-zoom text-bright" id="card-prompt">
+           <h2>Մուտքագրեք Ձեր գտնվելու վայրը</h2>
+           <hr class="bright">
+          
+           <input class="inp" placeholder="Մուտքագրեք Ձեր քաղաքի անունը" id="enter">
+           <h2 id="h2">Ընտրեք ջերմաստիճանի միավոր</h2>
+           <select id="select">
+               <option >Ցելսիուսի աստիճան</option>
+               <option>Ֆարենհեյթ</option>
+           </select><br>
+           <button class=" btn lime right" onclick="submition()">Հաստատել</button>
+           <button class="red btn left" onclick="cancel()">Չեղարկել</button>
+        <div id="help">
+               <i onclick="help()" class="material-icons">Օգն.</i>
+           </div>   
+       </div>
+       
+       
+       
+       
+       <div class="popup card anime-zoom hide text-bright" id="help-card">
+           <h2>Օգնություն</h2>
+          ❄️☀️☁️ Մուտքագրեք այն վայրի անունը, որտեղ ցանկանում եք գտնել եղանակը՝ գտնվելու վայրը խմբագրելու համար, հպեք վերևի ձախ կողմում գտնվող խմբագրման պատկերակին ☁️❄️
+           <div class="center"><br><br>
+          ❄️☀️ Կոդը ստեղծվել է Հասմիկ Մինասյան-ի կողմից [Relq II Project-ի համար] ☀️❄️
+           <br />
+           <br />
+          ❄️  ❄️
+           
+           <button class="btn red" onclick="closeHelp()">Փակել</button></div>
+       </div>
+       
+       
+       <div id="toast"></div>
+       
+    <div id="menu-help">
+        <button class="btn"><--</button>
+    </div>
+    <!--********:Cloud Loader:*******-->
+        <div class="loader-wrapper" id="l-w">
+            <div><div></div><div></div></div>
+            <h1>code with Hasmik</h1>
+         </div>
+    <!--********:Loader End:*********-->
+	<script src="main.js"></script>
+    </body>
+</html>
