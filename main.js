@@ -1,7 +1,7 @@
 function submition(){
 	let input = document.getElementById("enter").value;
 		if(input === ""){
-			toast.innerHTML = "Input Field Can't Be Blank !";
+			toast.innerHTML = "Մուտքի դաշտը չի կարող դատարկ լինել !";
 	toast.classList.add("active");
 			setTimeout(function () { toast.className = toast.classList.remove("active"); }, 2000);
 		} else {
@@ -36,7 +36,7 @@ function submition(){
 		})
 		.catch(function() {
 		  // catch any errors
-	toast.innerHTML = "Invalid City Name !";
+	toast.innerHTML = "Քաղաքի անվավեր անուն !";
 	toast.classList.add("active");
 			setTimeout(function () { toast.className = toast.classList.remove("active");}, 2000);
 			document.getElementById('card-prompt').classList.remove('hide');
@@ -85,7 +85,7 @@ function submition(){
 	setInterval(()=>{ document.getElementById("l-w").style.animation="loader-fade .3s ease-out";
 	   setInterval(()=>{
 		   document.getElementById("l-w").style.display="none";
-	   },290);
+	   },190);
 	   
 	},3000)
 	/*JS For Cloud Loader End*/
@@ -95,7 +95,7 @@ function submition(){
 		 setTimeout(function () {
 	swal({
 	  title: " Weather  app [ Ե Ղ Ա Ն Ա Կ ] ❄",
-	  text: "Սա եղանակային տեսության հավելված է Հասմիկ Մինասյան-ի կողմից: Հուսով եմ, ձեզ դուր է գալիս... Խնդրում եմ համոզվեք, որ քաղաքի կամ նահանգի անունից հետո որևէ տեղ չեք հատկացրել: Օգնության համար հպեք հարցական նշանի պատկերին.",
+	  text: "Սա եղանակային տեսության հավելված է Հասմիկ Մինասյան-ի կողմից: Հուսով եմ, ձեզ դուր է գալիս... Խնդրում եմ համոզվեք, որ քաղաքի անունը ճիշտ եք մուտքագրում: Օգնության համար հպեք հարցական նշանի պատկերին.",
 	  icon: "",
 	  button: "Շարունակել",
 	  closeOnEsc: false,
